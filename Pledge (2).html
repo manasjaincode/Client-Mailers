@@ -28,27 +28,26 @@ ol {
 }
 
         /* Responsive styles for smaller screens */
-        @media only screen and (max-width: 768px) {
-            body {
-                width: 600px !important; /* Forces a specific width for some email clients */
-                font-size: 10pt;
-            }
-
-            p ul, p ol { /* Targeting lists within paragraphs for padding */
-                padding-left: 25px;
-            }
-        }
-
-        @media only screen and (max-width: 480px) {
-            body {
-                width: 600px !important; /* Forces a specific width for some email clients */
-                font-size: 10pt;
-            }
-
-            p ul, p ol { /* Targeting lists within paragraphs for padding */
-                padding-left: 25px;
-            }
-        }
+        @media only screen and (max-width: 600px) { /* Adjust breakpoint for common email templates */
+    .main-table {
+        width: 100% !important;
+    }
+    .content-table {
+        width: 100% !important;
+        padding-left: 15px !important; /* Adjust padding for smaller screens */
+        padding-right: 15px !important;
+    }
+    .logo-img {
+        width: 150px !important; /* Make logo responsive */
+        height: auto !important;
+    }
+    td[class="padding-mobile"] { /* Generic class for mobile padding */
+        padding: 15px !important;
+    }
+    p, ul, ol {
+        font-size: 11pt !important; /* Adjust font size for better readability on small screens */
+    }
+}
     </style>
 </head>
 
