@@ -7,23 +7,25 @@
     <title>ArihantPlus Pledge Feature Launch</title>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'League Spartan', sans-serif;
-            line-height: 160%;
-            text-align: left;
-            letter-spacing: 0px !important;
-            background-color: #f8f8f8;
-            padding: 0;
-            margin: 0;
-        }
+      body {
+    font-family: 'League Spartan', Arial, sans-serif; /* Add fallback fonts */
+    line-height: 1.6; /* Use unitless line-height for better scaling */
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%; /* Prevent font boosting on mobile */
+    -ms-text-size-adjust: 100%; /* For IE */
+    width: 100% !important; /* Ensure full width on mobile */
+}
 
-        p,
-        ul,
-        ol { /* Added ol here for consistent spacing */
-            text-align: left;
-            letter-spacing: 0px !important;
-            margin-bottom: 1em;
-        }
+p,
+ul,
+ol {
+    margin-top: 0; /* Standardize margin */
+    margin-bottom: 16px; /* Explicit pixel value for consistency */
+    line-height: 1.6;
+    color: #32302f; /* Apply default text color */
+}
 
         /* Responsive styles for smaller screens */
         @media only screen and (max-width: 768px) {
